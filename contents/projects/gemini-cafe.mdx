@@ -1,0 +1,164 @@
+---
+author: "Dana Harliansyah"
+title: "Gemini Cafe"
+description: "Food ordering application integrated with Midtrans."
+banner: "https://res.cloudinary.com/nubicoder/image/upload/v1696047636/nubicoder/projects/gemini-cafe/gemini_cafe_thumbnail_nkismb.png"
+slug: "gemini-cafe"
+published: true
+isFeatured: true
+techs: "React, NodeJs, ExpressJs, MongoDB"
+github: "https://github.com/danaharley/gemini-cafe-frontend, https://github.com/danaharley/gemini-cafe-backend"
+site_url: "https://gemini-cafe-frontend.vercel.app"
+publishedAt: "2023-09-23"
+---
+
+<Aside position="left">
+  > If the app doesn't work properly, it means the API has been suspended
+  because of free hosting restrictions.
+</Aside>
+
+---
+
+## Short Explanation
+
+**Gemini Cafe** is an online food ordering application. This application provides various features and functionalities that make it easier for users to explore menu lists, order food, drinks, pay, and even track order status.
+
+---
+
+## Project Goals
+
+<Aside position="left">
+  > I used snap and set it in development mode. for testing use the [Midtrans
+  Mock Payment Provider](https://simulator.sandbox.midtrans.com/bca/va/index)
+  tool to complete the payment.
+</Aside>
+
+This project aims to build an application that is integrated with a payment gateway, in this case using [Midtrans](https://docs.midtrans.com/docs). This application has the following features:
+
+- **Menu List**: Users are able to access the list menu. Makes it easier for users to choose food that meets their budget and taste.
+- **Ordering**: Users can add menu-items to the shopping cart and set the order quantity. After selecting, the user can proceed with the ordering process.
+- **Payment**: This application only provides payments with [Midtrans](https://docs.midtrans.com/docs). Midtrans provides 25 payment methods ranging from GoPay, QRIS, bank transfer, credit/debit card, e-wallet, and many more.
+- **Invoice**: A detailed record of the order that the customer has made and the amount the customer must pay for the order. Some information contained in the invoice such as name, address, order details, total price, payment method and shop contact information.
+- **Order Tracking**: Allows users to track order status in real-time. Users can see when an order has been processed, is on its way, or has arrived at its destination.
+- **My orders**: Gives users quick access to information about the orders they have placed.
+
+---
+
+## Tech Stack Used
+
+In this application I use MERN Stack technology ([MongoDB](https://www.mongodb.com), [ExpressJs](https://expressjs.com), [ReactJs](https://react.dev), [NodeJs](https://nodejs.org/en/docs/guides)). As we know, MongoDB, ExpressJs and NodeJs for Backend API, and ReactJs for building user interface (UI) of web applications.
+
+And also in this application I implemented [JSON Web Token (JWT)](https://jwt.io/introduction) for authentication and authorization to make the application safer, such as maintaining information security and protecting against CSRF (Cross-Site Request Forgery) attacks.
+
+And for state management I use [Redux Toolkit](https://redux-toolkit.js.org/introduction/getting-started) which is an easier and more efficient version of Redux. Redux Toolkit also includes a powerful data fetching and caching capability that they dub RTK Query. I use RTK Query to manage API calls and data updates in an application.
+
+---
+
+## Screenshots
+
+<Split>
+  <NextImage
+    src="https://res.cloudinary.com/nubicoder/image/upload/v1695131380/nubicoder/projects/gemini-cafe/homepage_wzwnbe.png"
+    alt="homepage"
+    width={640}
+    height={368}
+    className="shadow"
+    preview
+  />
+  <NextImage
+    src="https://res.cloudinary.com/nubicoder/image/upload/v1695133599/nubicoder/projects/gemini-cafe/register_z7sddg.png"
+    alt="register"
+    width={640}
+    height={368}
+    className="shadow"
+    preview
+  />
+  <NextImage
+    src="https://res.cloudinary.com/nubicoder/image/upload/v1695133633/nubicoder/projects/gemini-cafe/login_ezesp7.png"
+    alt="login"
+    width={640}
+    height={368}
+    className="shadow"
+    preview
+  />
+  <NextImage
+    src="https://res.cloudinary.com/nubicoder/image/upload/v1695133753/nubicoder/projects/gemini-cafe/search_by_category_lfzpcm.png"
+    alt="filter by category"
+    width={640}
+    height={368}
+    className="shadow"
+    preview
+  />
+  <NextImage
+    src="https://res.cloudinary.com/nubicoder/image/upload/v1695133929/nubicoder/projects/gemini-cafe/cart_vutbct.png"
+    alt="cart"
+    width={640}
+    height={368}
+    className="shadow"
+    preview
+  />
+  <NextImage
+    src="https://res.cloudinary.com/nubicoder/image/upload/v1695133936/nubicoder/projects/gemini-cafe/order_pxrb38.png"
+    alt="order"
+    width={640}
+    height={368}
+    className="shadow"
+    preview
+  />
+  <NextImage
+    src="https://res.cloudinary.com/nubicoder/image/upload/v1695134005/nubicoder/projects/gemini-cafe/address_modal_kmzzh6.png"
+    alt="address modal"
+    width={640}
+    height={368}
+    className="shadow"
+    preview
+  />
+  <NextImage
+    src="https://res.cloudinary.com/nubicoder/image/upload/v1695134056/nubicoder/projects/gemini-cafe/add_address_ci6tky.png"
+    alt="add address"
+    width={640}
+    height={368}
+    className="shadow"
+    preview
+  />
+  <NextImage
+    src="https://res.cloudinary.com/nubicoder/image/upload/v1695134445/nubicoder/projects/gemini-cafe/order_rxcvqh.png"
+    alt="order"
+    width={640}
+    height={368}
+    className="shadow"
+    preview
+  />
+  <NextImage
+    src="https://res.cloudinary.com/nubicoder/image/upload/v1695134480/nubicoder/projects/gemini-cafe/invoice_before_payment_hz1b4w.png"
+    alt="invoice before payment"
+    width={640}
+    height={368}
+    className="shadow"
+    preview
+  />
+  <NextImage
+    src="https://res.cloudinary.com/nubicoder/image/upload/v1695134522/nubicoder/projects/gemini-cafe/snap_zplbgx.png"
+    alt="snap bca"
+    width={640}
+    height={368}
+    className="shadow"
+    preview
+  />
+  <NextImage
+    src="https://res.cloudinary.com/nubicoder/image/upload/v1695134583/nubicoder/projects/gemini-cafe/mock_payment_xqb5aj.png"
+    alt="mock payment"
+    width={640}
+    height={368}
+    className="shadow"
+    preview
+  />
+  <NextImage
+    src="https://res.cloudinary.com/nubicoder/image/upload/v1695134639/nubicoder/projects/gemini-cafe/invoice_after_payment_uh7q6o.png"
+    alt="invoice after payment"
+    width={640}
+    height={368}
+    className="shadow"
+    preview
+  />
+</Split>
