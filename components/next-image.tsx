@@ -59,7 +59,7 @@ export const NextImage = ({
               preview ? "cursor-pointer" : "pointer-events-none",
               featured && "object-left",
             )}
-            onLoadingComplete={() => setLoading(false)}
+            onLoad={() => setLoading(false)}
             {...props}
           />
         </div>
@@ -94,7 +94,7 @@ export const NextImage = ({
                       ? "scale-110 blur-xl grayscale"
                       : "scale-100 blur-0 grayscale-0",
                   )}
-                  onLoadingComplete={() => setLoading(false)}
+                  onLoad={() => setLoading(false)}
                   {...props}
                 />
               </div>
