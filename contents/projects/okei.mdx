@@ -1,0 +1,146 @@
+---
+author: "Dana Harliansyah"
+title: "Okei"
+description: "Social media app."
+banner: "https://res.cloudinary.com/danaharley/image/upload/v1718981549/okei-thumbnail_ba3lik.png"
+slug: "okei-v2"
+published: true
+isFeatured: true
+techs: "Nextjs, Server Action, NextAuth-v5, Typescript, Prisma, Zustand"
+github: "https://github.com/danaharley/okei-v2"
+site_url: "https://okei-v2.vercel.app"
+publishedAt: "2024-06-18"
+---
+
+---
+
+## Short Explanation
+
+**Okei** is a social media platform created specifically to make it easier for students to upload their poetry works to online media. Students can create posts, like, comment on other people's posts and can also follow other people's profiles. Apart from that, it can also be used as a forum for conveying messages and impressions at art exhibition stands.
+
+---
+
+## Project Goals
+
+- **Register**: Creating a new Okei account. This allows new users to join the platform, create a profile, and start sharing and interacting with other members.
+- **Login**: Accessing your Okei account. This allows users to log into their account and access all their personal features and content. It also ensures that only the account owner can manage and post on their profile.
+- **Creating Posts**: Users can share moments, experiences, artwork, or information with their followers.
+- **Liking Posts**: Giving a like to a post. This feature allows users to show appreciation or support for others' posts. Likes also serve as a form of social interaction that can increase the visibility and popularity of a post.
+- **Commenting on Posts**: This allows users to interact more deeply with the content shared by others. Comments can be compliments, questions, or further discussions about the content.
+- **Updating Profile**: Changing personal information on the profile. Users can update personal information such as name, username, email and profile pictures.
+- **Following**: Following other users' accounts. By following other users, a person can receive updates of their content in their feed. This helps users stay connected with friends they are interested in.
+
+---
+
+## Tech Stack Used
+
+When developing this application, I used [Next.js 14](https://nextjs.org/docs) App Router which has the [Server Actions](https://react.dev/reference/rsc/server-actions) feature. Next.js Server Actions are functions that execute on the server side. Having these special functions that only run on the server means that developers can offload responsibilities like data fetching and mutations to them, avoiding the vulnerabilities and security concerns of fetching and mutating data from the client.
+
+Combining [NextAuth.js v5](https://authjs.dev/getting-started/migrating-to-v5), [TypeScript](https://www.typescriptlang.org), [Prisma](https://www.prisma.io), [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction) and [Uploadthing](https://uploadthing.com) offers a robust solution for building secure, scalable, and type-safe web applications with Next.js.
+
+- **NextAuth.js** is a complete open-source authentication solution for Next.js applications. It provides secure and flexible authentication methods, supporting various providers (OAuth, email, credentials, etc.).
+- **TypeScript** ensures type safety and improves developer experience.
+- **Prisma** is an open-source ORM (Object-Relational Mapping) tool for Node.js and TypeScript. It simplifies database interactions by providing a type-safe database client.
+- **Zustand** is a small, fast, and scalable state management solution for React applications.
+- **Uploadthing** is a service designed to simplify file uploads in web applications. It provides a reliable and scalable solution for handling file uploads, often integrating seamlessly with various backend and frontend frameworks.
+
+## Screenshots
+
+<Split>
+  <NextImage
+    src="https://res.cloudinary.com/danaharley/image/upload/v1718925983/login_ku1tfs.png"
+    alt="login"
+    width={640}
+    height={368}
+    className="shadow"
+    preview
+  />
+  <NextImage
+    src="https://res.cloudinary.com/danaharley/image/upload/v1718925983/register_z4bkri.png"
+    alt="register"
+    width={640}
+    height={368}
+    className="shadow"
+    preview
+  />
+  <NextImage
+    src="https://res.cloudinary.com/danaharley/image/upload/v1718925987/home_ui2wny.png"
+    alt="home"
+    width={640}
+    height={368}
+    className="shadow"
+    preview
+  />
+  <NextImage
+    src="https://res.cloudinary.com/danaharley/image/upload/v1718925990/create_post_m5xtrn.png"
+    alt="create post"
+    width={640}
+    height={368}
+    className="shadow"
+    preview
+  />
+  <NextImage
+    src="https://res.cloudinary.com/danaharley/image/upload/v1718925984/alert_confirmation_uvulcn.png"
+    alt="discard post"
+    width={640}
+    height={368}
+    className="shadow"
+    preview
+  />
+  <NextImage
+    src="https://res.cloudinary.com/danaharley/image/upload/v1718925986/detail_post_kf06lf.png"
+    alt="detail post"
+    width={640}
+    height={368}
+    className="shadow"
+    preview
+  />
+  <NextImage
+    src="https://res.cloudinary.com/danaharley/image/upload/v1718925991/comment_zhmjza.png"
+    alt="comment"
+    width={640}
+    height={368}
+    className="shadow"
+    preview
+  />
+  <NextImage
+    src="https://res.cloudinary.com/danaharley/image/upload/v1718925986/user_profile_btxqq8.png"
+    alt="user profile"
+    width={640}
+    height={368}
+    className="shadow"
+    preview
+  />
+  <NextImage
+    src="https://res.cloudinary.com/danaharley/image/upload/v1718925986/edit_profile_mhsltq.png"
+    alt="edit user profile"
+    width={640}
+    height={368}
+    className="shadow"
+    preview
+  />
+  <NextImage
+    src="https://res.cloudinary.com/danaharley/image/upload/v1718925988/search_gjdky2.png"
+    alt="search"
+    width={640}
+    height={368}
+    className="shadow"
+    preview
+  />
+  <NextImage
+    src="https://res.cloudinary.com/danaharley/image/upload/v1718925983/activity_a0vc2d.png"
+    alt="activity"
+    width={640}
+    height={368}
+    className="shadow"
+    preview
+  />
+  <NextImage
+    src="https://res.cloudinary.com/danaharley/image/upload/v1718925985/dark_mode_hzpwtz.png"
+    alt="dark mode"
+    width={640}
+    height={368}
+    className="shadow"
+    preview
+  />
+</Split>
