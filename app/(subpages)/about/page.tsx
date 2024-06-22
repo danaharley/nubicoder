@@ -52,7 +52,7 @@ const AboutPage = () => {
 
       <div id="contact_me" className="mt-20">
         <h2>Current Favorite Tech Stack</h2>
-        <div className="mt-2 flex items-center text-slate-900/90 dark:text-slate-100/90 md:space-x-4">
+        <div className="mt-2 flex items-center text-slate-900/90 dark:text-[#d1d9df] md:space-x-4">
           <Icon
             icons={[
               "react",

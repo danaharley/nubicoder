@@ -8,7 +8,7 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 216 28% 7%;
   }
 
   h1,
@@ -21,7 +21,7 @@
   ol,
   ul,
   span {
-    @apply text-slate-900/90 dark:text-slate-100/90;
+    @apply text-slate-900/90 dark:text-[#d1d9df];
   }
 
   p,
