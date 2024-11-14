@@ -1,3 +1,4 @@
+import * as React from "react";
 // import "../styles/globals.css";
 import "../styles/styles.css";
 import type { Metadata } from "next";
@@ -34,21 +35,6 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <main>
-            {/* <svg
-              className="opacity-7 pointer-events-none fixed isolate z-50 mix-blend-soft-light"
-              width="100%"
-              height="100%"
-            >
-              <filter id="nubicoder">
-                <feTurbulence
-                  type="fractalNoise"
-                  baseFrequency="0.80"
-                  numOctaves="4"
-                  stitchTiles="stitch"
-                />
-              </filter>
-              <rect width="100%" height="100%" filter="url(#nubicoder)"></rect>
-            </svg> */}
             <div className="relative z-10 grid grid-cols-[1fr,min(640px,100%),1fr] gap-y-8 px-4 text-base xl:grid-cols-[1fr,minmax(auto,240px),min(640px,100%),minmax(auto,240px),1fr] xl:gap-x-9 xl:px-0 [&>*]:col-start-2 xl:[&>*]:col-start-3">
               <Header />
               {children}
