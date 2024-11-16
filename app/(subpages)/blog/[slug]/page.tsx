@@ -11,9 +11,9 @@ import { getFiles, getFile } from "@/lib/mdx";
 import { formatDate } from "@/lib/utils";
 
 type DetailBlogPageProps = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
 export const generateStaticParams = async () => {

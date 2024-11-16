@@ -12,9 +12,9 @@ import { getFiles, getFile } from "@/lib/mdx";
 import { formatDate } from "@/lib/utils";
 
 type DetailProjectPageProps = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
 export const generateStaticParams = async () => {
