@@ -23,7 +23,7 @@ export const generateStaticParams = async () => {
 };
 
 const DetailBlogPage = async ({ params }: DetailBlogPageProps) => {
-  const { slug } = params;
+  const { slug } = await params;
 
   const post = await getFile("blog", slug);
 

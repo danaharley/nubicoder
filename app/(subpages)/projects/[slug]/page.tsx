@@ -24,7 +24,7 @@ export const generateStaticParams = async () => {
 };
 
 const DetailProjectPage = async ({ params }: DetailProjectPageProps) => {
-  const { slug } = params;
+  const { slug } = await params;
 
   const project = await getFile("projects", slug);
 
