@@ -7,7 +7,7 @@ import { Icon } from "@/components/icon";
 const AboutPage = () => {
   return (
     <section className="py-10 md:py-16">
-      <h2>About</h2>
+      <h2>About Me</h2>
       <h1>Dana Harliansyah</h1>
       <div className="space-y-5">
         <div className="float-right mx-3 mb-1 h-48 w-44 xl:h-80 xl:w-72">
