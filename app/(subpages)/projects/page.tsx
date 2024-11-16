@@ -11,11 +11,11 @@ const ProjectsPage = async () => {
 
   if (!projects) return notFound();
 
-  const filteredPProjects = projects.filter(
-    (project) => project.frontmatter.published !== false,
+  const filteredProjectsPublished = projects.filter(
+    (project) => project.frontmatter.published,
   );
 
-  if (!filteredPProjects.length) {
+  if (!filteredProjectsPublished.length) {
     return (
       <div className="mt-10">
         <Heading
@@ -29,7 +29,7 @@ const ProjectsPage = async () => {
 
   return (
     <section className="py-10 md:py-16">
-      <Projects projects={filteredPProjects} />
+      <Projects projects={filteredProjectsPublished} />
     </section>
   );
 };

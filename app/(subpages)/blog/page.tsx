@@ -11,11 +11,11 @@ const BlogPage = async () => {
 
   if (!posts) return notFound();
 
-  const filteredPosts = posts.filter(
-    (post) => post.frontmatter.published !== false,
+  const filteredPostsPublished = posts.filter(
+    (post) => post.frontmatter.published,
   );
 
-  if (!filteredPosts.length) {
+  if (!filteredPostsPublished.length) {
     return (
       <div className="mt-10">
         <Heading
@@ -29,7 +29,7 @@ const BlogPage = async () => {
 
   return (
     <section className="py-10 md:py-16">
-      <Posts posts={filteredPosts} />
+      <Posts posts={filteredPostsPublished} />
     </section>
   );
 };
