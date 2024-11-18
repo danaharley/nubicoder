@@ -20,7 +20,7 @@ export const Projects = ({ projects }: ProjectsProps) => {
           key={i}
           className="project-card rounded border border-slate-400/40 p-3.5"
         >
-          <Link href={`projects/${project.frontmatter.slug}`} className="">
+          <Link href={`/projects/${project.frontmatter.slug}`}>
             <h3 className="animated-underline w-fit xl:text-lg">
               {project.frontmatter.title}
             </h3>

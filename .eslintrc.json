@@ -1,10 +1,6 @@
 {
-  "extends": ["next/core-web-vitals", "prettier"],
-  "plugins": ["tailwindcss"],
-  "settings": {
-    "tailwindcss": {
-      "callees": ["nc"],
-      "config": "tailwind.config.js"
-    }
+  "extends": ["next/core-web-vitals"],
+  "rules": {
+    "react/no-unescaped-entities": "off"
   }
 }
