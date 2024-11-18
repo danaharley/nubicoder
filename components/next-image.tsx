@@ -8,6 +8,7 @@ import { nc } from "@/lib/utils";
 type NextImage = {
   height: string | number;
   width: string | number;
+  alt: string;
   aspect?: {
     width: number;
     height: number;
@@ -20,6 +21,7 @@ export const NextImage = ({
   aspect,
   height,
   width,
+  alt = "image",
   className,
   preview = false,
   featured = false,
@@ -49,6 +51,7 @@ export const NextImage = ({
           onClick={preview ? () => setIsOpen(true) : undefined}
         >
           <Image
+            alt={alt}
             fill
             sizes="100%"
             className={nc(
@@ -86,6 +89,7 @@ export const NextImage = ({
                 }}
               >
                 <Image
+                  alt={alt}
                   fill
                   sizes="100%"
                   className={nc(
